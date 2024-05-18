@@ -22,13 +22,12 @@ const Participants = () => {
       {isLoading ? (
         <div>Loading...</div>
       ) : (
-        <>
-          <h2>
-            {`&quot; ${!event.registrations?.length > 0 ? event.title : "Some"} &quot;`}{" "}
-            participants
-          </h2>
-          <View event={event} />
-        </>
+        event.title && (
+          <>
+            <h2>&quot;{event.title}&quot; event participants</h2>
+            <View event={event} />
+          </>
+        )
       )}
     </section>
   );

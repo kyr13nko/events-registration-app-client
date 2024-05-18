@@ -2,18 +2,23 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 import { fetchAddMember, fetchEventById, fetchEvents } from "../../services/eventsAPI";
 
-export const getEvents = createAsyncThunk("events/all", async (_, { rejectWithValue }) => {
-  try {
-    const { data } = await fetchEvents();
-    return data;
-  } catch (error) {
-    if (error) {
-      // toast.error(error.response.data.message);
-      console.log(error);
+import { toast } from "react-toastify";
+
+export const getEvents = createAsyncThunk(
+  "events/all",
+  async ({ page = 1, limit = 8 }, { rejectWithValue }) => {
+    try {
+      const { data } = await fetchEvents(page, limit);
+      return data;
+    } catch (error) {
+      if (error) {
+        toast.error(error.response.data.message);
+        console.log(error);
+      }
+      return rejectWithValue(error.response.data);
     }
-    return rejectWithValue(error.response.data);
   }
-});
+);
 
 export const getEventById = createAsyncThunk(
   "events/eventById",
@@ -23,7 +28,7 @@ export const getEventById = createAsyncThunk(
       return data;
     } catch (error) {
       if (error) {
-        // toast.error(error.response.data.message);
+        toast.error(error.response.data.message);
         console.log(error);
       }
       return rejectWithValue(error.response.data);
@@ -41,7 +46,7 @@ export const getAddMember = createAsyncThunk(
       return data;
     } catch (error) {
       if (error) {
-        // toast.error(error.response.data.message);
+        toast.error(error.response.data.message);
         console.log(error);
       }
       return rejectWithValue(error.response.data);

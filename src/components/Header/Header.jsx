@@ -7,7 +7,6 @@ const Header = () => {
       <Container>
         <nav>
           <NavLink to="/events">Events</NavLink>
-          <NavLink to="/registration">Registration</NavLink>
         </nav>
       </Container>
     </header>

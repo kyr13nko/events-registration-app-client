@@ -1,0 +1,724 @@
+[
+  {
+    "title": "Football Match",
+    "description": "Game between Dynamo and Shakhtar",
+    "eventDate": "2024-05-20T18:00:00Z",
+    "organizer": "UPL",
+    "registrations": [
+      {
+        "fullName": "saloid",
+        "email": "saloid@salo.com",
+        "dateOfBirth": "12-12-1234",
+        "source": "media"
+      },
+      {
+        "fullName": "dadsad",
+        "email": "dasd@dasd.caa",
+        "dateOfBirth": "12-12-3434",
+        "source": "friends"
+      },
+      {
+        "fullName": "John Doe",
+        "email": "john.doe@example.com",
+        "dateOfBirth": "01-01-2000",
+        "source": "social"
+      },
+      {
+        "fullName": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "dateOfBirth": "15-03-1995",
+        "source": "social"
+      },
+      {
+        "fullName": "Jim Brown",
+        "email": "jim.brown@example.com",
+        "dateOfBirth": "30-07-1988",
+        "source": "email"
+      }
+    ]
+  },
+  {
+    "title": "Basketball Match",
+    "description": "Game between Dynamo and Shakhtar",
+    "eventDate": "2024-05-20T18:00:00Z",
+    "organizer": "UPL",
+    "registrations": [
+      {
+        "fullName": "Hryhorii Kyriienko",
+        "email": "hrhrkrnk@gmail.com",
+        "dateOfBirth": "26-10-1990",
+        "source": "social"
+      },
+      {
+        "fullName": "Ivanna Kyriienko",
+        "email": "ivannakrnk@gmail.com",
+        "dateOfBirth": "30-05-1999",
+        "source": "friends"
+      },
+      {
+        "fullName": "Enei Kyriienko",
+        "email": "eneikrnk@gmail.com",
+        "dateOfBirth": "14-09-2023",
+        "source": "myself"
+      },
+      {
+        "fullName": "Mike Johnson",
+        "email": "mike.johnson@example.com",
+        "dateOfBirth": "20-11-1992",
+        "source": "friends"
+      },
+      {
+        "fullName": "Emily Davis",
+        "email": "emily.davis@example.com",
+        "dateOfBirth": "05-05-1985",
+        "source": "social"
+      }
+    ]
+  },
+  {
+    "title": "Tennis Tournament",
+    "description": "Tennis tournament",
+    "eventDate": "2024-05-21T15:00:00Z",
+    "organizer": "Tennis Club 'Raketa'",
+    "registrations": [
+      {
+        "fullName": "Oleg Stepanov",
+        "email": "oleg@gmail.com",
+        "dateOfBirth": "15-02-1990",
+        "source": "myself"
+      },
+      {
+        "fullName": "Irina Kovalchuk",
+        "email": "irina@gmail.com",
+        "dateOfBirth": "20-07-1985",
+        "source": "friends"
+      },
+      {
+        "fullName": "Mikhail Petrenko",
+        "email": "misha@gmail.com",
+        "dateOfBirth": "05-11-1992",
+        "source": "friends"
+      },
+      {
+        "fullName": "Natalia Grigoreva",
+        "email": "natalia@gmail.com",
+        "dateOfBirth": "10-04-1988",
+        "source": "myself"
+      },
+      {
+        "fullName": "Vitaliy Lysenko",
+        "email": "vitalik@gmail.com",
+        "dateOfBirth": "25-09-1995",
+        "source": "friends"
+      }
+    ]
+  },
+  {
+    "title": "Volleyball Tournament",
+    "description": "Amateur volleyball tournament",
+    "eventDate": "2024-05-22T17:00:00Z",
+    "organizer": "Sport Club 'Speedway'",
+    "registrations": [
+      {
+        "fullName": "Andriy Ivanov",
+        "email": "ivanov@gmail.com",
+        "dateOfBirth": "12-08-1987",
+        "source": "myself"
+      },
+      {
+        "fullName": "Tetiana Petrenko",
+        "email": "petrenko@gmail.com",
+        "dateOfBirth": "18-05-1993",
+        "source": "friends"
+      },
+      {
+        "fullName": "Oleksandr Kovalov",
+        "email": "kovalov@gmail.com",
+        "dateOfBirth": "30-12-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Natalia Gordienko",
+        "email": "gordienko@gmail.com",
+        "dateOfBirth": "25-06-1988",
+        "source": "friends"
+      },
+      {
+        "fullName": "Serhiy Shevchenko",
+        "email": "shevchenko@gmail.com",
+        "dateOfBirth": "10-01-1994",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Chess Tournament",
+    "description": "Local chess championship",
+    "eventDate": "2024-05-23T10:00:00Z",
+    "organizer": "Chess Club 'Gambit'",
+    "registrations": [
+      {
+        "fullName": "Dmytro Pavlenko",
+        "email": "dmytro@gmail.com",
+        "dateOfBirth": "17-03-1975",
+        "source": "friends"
+      },
+      {
+        "fullName": "Olga Smirnova",
+        "email": "olga@gmail.com",
+        "dateOfBirth": "22-06-1980",
+        "source": "myself"
+      },
+      {
+        "fullName": "Nikolai Voronin",
+        "email": "nikolai@gmail.com",
+        "dateOfBirth": "05-09-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Anna Bondarenko",
+        "email": "anna@gmail.com",
+        "dateOfBirth": "19-02-1985",
+        "source": "friends"
+      },
+      {
+        "fullName": "Yaroslav Melnyk",
+        "email": "yaroslav@gmail.com",
+        "dateOfBirth": "28-10-1995",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Marathon",
+    "description": "City marathon",
+    "eventDate": "2024-05-24T06:00:00Z",
+    "organizer": "Sport Club 'Run for Life'",
+    "registrations": [
+      {
+        "fullName": "Ivan Horobets",
+        "email": "ivan@gmail.com",
+        "dateOfBirth": "01-05-1988",
+        "source": "myself"
+      },
+      {
+        "fullName": "Maria Tkachuk",
+        "email": "maria@gmail.com",
+        "dateOfBirth": "12-11-1992",
+        "source": "friends"
+      },
+      {
+        "fullName": "Oleksiy Shevchenko",
+        "email": "oleksiy@gmail.com",
+        "dateOfBirth": "25-08-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Inna Mykhailenko",
+        "email": "inna@gmail.com",
+        "dateOfBirth": "07-04-1985",
+        "source": "social"
+      },
+      {
+        "fullName": "Viktor Kravets",
+        "email": "viktor@gmail.com",
+        "dateOfBirth": "15-12-1995",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Coding Workshop",
+    "description": "Introduction to Python programming",
+    "eventDate": "2024-05-25T09:00:00Z",
+    "organizer": "Tech Hub",
+    "registrations": [
+      {
+        "fullName": "Pavlo Bondar",
+        "email": "pavlo@gmail.com",
+        "dateOfBirth": "12-07-1989",
+        "source": "social"
+      },
+      {
+        "fullName": "Kateryna Polishchuk",
+        "email": "kateryna@gmail.com",
+        "dateOfBirth": "23-04-1994",
+        "source": "friends"
+      },
+      {
+        "fullName": "Volodymyr Kozak",
+        "email": "volodymyr@gmail.com",
+        "dateOfBirth": "30-06-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Olena Rybalchenko",
+        "email": "olena@gmail.com",
+        "dateOfBirth": "15-01-1985",
+        "source": "social"
+      },
+      {
+        "fullName": "Andriy Kolos",
+        "email": "andriy@gmail.com",
+        "dateOfBirth": "10-03-1995",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Art Exhibition",
+    "description": "Exhibition of modern art",
+    "eventDate": "2024-05-26T14:00:00Z",
+    "organizer": "Gallery 'Art Space'",
+    "registrations": [
+      {
+        "fullName": "Oksana Hrytsenko",
+        "email": "oksana@gmail.com",
+        "dateOfBirth": "25-09-1982",
+        "source": "friends"
+      },
+      {
+        "fullName": "Yurii Koval",
+        "email": "yurii@gmail.com",
+        "dateOfBirth": "12-11-1985",
+        "source": "myself"
+      },
+      {
+        "fullName": "Nina Melnyk",
+        "email": "nina@gmail.com",
+        "dateOfBirth": "08-03-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Svitlana Savchenko",
+        "email": "svitlana@gmail.com",
+        "dateOfBirth": "15-06-1988",
+        "source": "social"
+      },
+      {
+        "fullName": "Oleksii Zadorozhnyi",
+        "email": "oleksii@gmail.com",
+        "dateOfBirth": "19-02-1993",
+        "source": "friends"
+      }
+    ]
+  },
+  {
+    "title": "Concert",
+    "description": "Live performance by local bands",
+    "eventDate": "2024-05-27T20:00:00Z",
+    "organizer": "Music Club 'Melody'",
+    "registrations": [
+      {
+        "fullName": "Oleksandr Ivanenko",
+        "email": "ivanenko@gmail.com",
+        "dateOfBirth": "12-01-1987",
+        "source": "myself"
+      },
+      {
+        "fullName": "Valeria Shevchuk",
+        "email": "valeria@gmail.com",
+        "dateOfBirth": "08-08-1991",
+        "source": "friends"
+      },
+      {
+        "fullName": "Serhiy Zayets",
+        "email": "serhiy@gmail.com",
+        "dateOfBirth": "25-10-1985",
+        "source": "friends"
+      },
+      {
+        "fullName": "Olha Sokolova",
+        "email": "olha@gmail.com",
+        "dateOfBirth": "30-07-1989",
+        "source": "social"
+      },
+      {
+        "fullName": "Andriy Shevchenko",
+        "email": "andriy@gmail.com",
+        "dateOfBirth": "10-11-1990",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Cooking Masterclass",
+    "description": "Learn to cook Italian cuisine",
+    "eventDate": "2024-05-28T17:00:00Z",
+    "organizer": "Culinary School 'Taste'",
+    "registrations": [
+      {
+        "fullName": "Oleksiy Honchar",
+        "email": "honchar@gmail.com",
+        "dateOfBirth": "14-05-1987",
+        "source": "friends"
+      },
+      {
+        "fullName": "Anastasiia Levchenko",
+        "email": "levchenko@gmail.com",
+        "dateOfBirth": "22-02-1993",
+        "source": "myself"
+      },
+      {
+        "fullName": "Dmytro Romanov",
+        "email": "romanov@gmail.com",
+        "dateOfBirth": "30-11-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Viktoriia Karpenko",
+        "email": "karpenko@gmail.com",
+        "dateOfBirth": "05-09-1988",
+        "source": "social"
+      },
+      {
+        "fullName": "Igor Tkach",
+        "email": "tkach@gmail.com",
+        "dateOfBirth": "10-04-1992",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Yoga Retreat",
+    "description": "Weekend yoga retreat in nature",
+    "eventDate": "2024-05-29T08:00:00Z",
+    "organizer": "Yoga Studio 'Harmony'",
+    "registrations": [
+      {
+        "fullName": "Oleh Lytvyn",
+        "email": "lytvin@gmail.com",
+        "dateOfBirth": "20-07-1989",
+        "source": "myself"
+      },
+      {
+        "fullName": "Viktoria Sokolova",
+        "email": "sokolova@gmail.com",
+        "dateOfBirth": "18-05-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Pavlo Kyrylenko",
+        "email": "kyrylenko@gmail.com",
+        "dateOfBirth": "30-09-1987",
+        "source": "friends"
+      },
+      {
+        "fullName": "Iryna Bilous",
+        "email": "bilous@gmail.com",
+        "dateOfBirth": "10-02-1993",
+        "source": "social"
+      },
+      {
+        "fullName": "Anton Lysenko",
+        "email": "lysenko@gmail.com",
+        "dateOfBirth": "25-08-1985",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Photography Workshop",
+    "description": "Mastering landscape photography",
+    "eventDate": "2024-05-30T10:00:00Z",
+    "organizer": "Photo Club 'Vision'",
+    "registrations": [
+      {
+        "fullName": "Ihor Kalchenko",
+        "email": "kalchenko@gmail.com",
+        "dateOfBirth": "15-12-1987",
+        "source": "myself"
+      },
+      {
+        "fullName": "Natalia Kravchuk",
+        "email": "kravchuk@gmail.com",
+        "dateOfBirth": "25-11-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Volodymyr Chernenko",
+        "email": "chern@gmail.com",
+        "dateOfBirth": "05-06-1995",
+        "source": "friends"
+      },
+      {
+        "fullName": "Kateryna Shulga",
+        "email": "shulga@gmail.com",
+        "dateOfBirth": "20-10-1992",
+        "source": "social"
+      },
+      {
+        "fullName": "Oksana Semenova",
+        "email": "semenova@gmail.com",
+        "dateOfBirth": "10-01-1985",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Tech Conference",
+    "description": "Annual tech innovation conference",
+    "eventDate": "2024-05-31T09:00:00Z",
+    "organizer": "Tech Hub",
+    "registrations": [
+      {
+        "fullName": "Dmytro Moroz",
+        "email": "moroz@gmail.com",
+        "dateOfBirth": "12-09-1987",
+        "source": "friends"
+      },
+      {
+        "fullName": "Tetiana Yaremchuk",
+        "email": "yaremchuk@gmail.com",
+        "dateOfBirth": "20-06-1990",
+        "source": "myself"
+      },
+      {
+        "fullName": "Oleksandr Fedorov",
+        "email": "fedorov@gmail.com",
+        "dateOfBirth": "30-04-1985",
+        "source": "friends"
+      },
+      {
+        "fullName": "Olha Kravets",
+        "email": "kravets@gmail.com",
+        "dateOfBirth": "10-01-1993",
+        "source": "social"
+      },
+      {
+        "fullName": "Ihor Ivanov",
+        "email": "ivanov@gmail.com",
+        "dateOfBirth": "05-07-1990",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Startup Pitch",
+    "description": "Pitch event for new startups",
+    "eventDate": "2024-06-01T15:00:00Z",
+    "organizer": "Startup Hub",
+    "registrations": [
+      {
+        "fullName": "Vitaliy Kravchenko",
+        "email": "kravchenko@gmail.com",
+        "dateOfBirth": "15-12-1988",
+        "source": "myself"
+      },
+      {
+        "fullName": "Anastasiia Petrenko",
+        "email": "petrenko@gmail.com",
+        "dateOfBirth": "25-04-1991",
+        "source": "friends"
+      },
+      {
+        "fullName": "Volodymyr Mykhailenko",
+        "email": "mykhailenko@gmail.com",
+        "dateOfBirth": "10-10-1985",
+        "source": "friends"
+      },
+      {
+        "fullName": "Iryna Borysenko",
+        "email": "borysenko@gmail.com",
+        "dateOfBirth": "20-08-1993",
+        "source": "social"
+      },
+      {
+        "fullName": "Oleksandr Kovalchuk",
+        "email": "kovalchuk@gmail.com",
+        "dateOfBirth": "30-03-1990",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Book Club Meeting",
+    "description": "Monthly book discussion",
+    "eventDate": "2024-06-02T18:00:00Z",
+    "organizer": "Book Club 'Literature Lovers'",
+    "registrations": [
+      {
+        "fullName": "Oksana Radchenko",
+        "email": "radchenko@gmail.com",
+        "dateOfBirth": "10-10-1985",
+        "source": "myself"
+      },
+      {
+        "fullName": "Mykola Borisenko",
+        "email": "borisenko@gmail.com",
+        "dateOfBirth": "15-05-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Anna Tymoshenko",
+        "email": "tymoshenko@gmail.com",
+        "dateOfBirth": "20-01-1992",
+        "source": "friends"
+      },
+      {
+        "fullName": "Yulia Tymoshenko",
+        "email": "yuliatym@gmail.com",
+        "dateOfBirth": "25-11-1991",
+        "source": "social"
+      },
+      {
+        "fullName": "Serhiy Hrytsenko",
+        "email": "hrytsenko@gmail.com",
+        "dateOfBirth": "05-09-1988",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Dance Workshop",
+    "description": "Learn Latin dances",
+    "eventDate": "2024-06-03T14:00:00Z",
+    "organizer": "Dance Studio 'Rhythm'",
+    "registrations": [
+      {
+        "fullName": "Yaroslav Lukashenko",
+        "email": "lukashenko@gmail.com",
+        "dateOfBirth": "10-05-1987",
+        "source": "friends"
+      },
+      {
+        "fullName": "Alina Shevchenko",
+        "email": "shevchenko@gmail.com",
+        "dateOfBirth": "30-07-1990",
+        "source": "myself"
+      },
+      {
+        "fullName": "Oleh Bilyk",
+        "email": "bilyk@gmail.com",
+        "dateOfBirth": "25-11-1985",
+        "source": "friends"
+      },
+      {
+        "fullName": "Iryna Kyrylenko",
+        "email": "kyrylenko@gmail.com",
+        "dateOfBirth": "15-02-1992",
+        "source": "social"
+      },
+      {
+        "fullName": "Viktor Fedorov",
+        "email": "fedorov@gmail.com",
+        "dateOfBirth": "20-03-1993",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Language Exchange Meetup",
+    "description": "Practice foreign languages",
+    "eventDate": "2024-06-04T19:00:00Z",
+    "organizer": "Language Club",
+    "registrations": [
+      {
+        "fullName": "Oleksandra Kostyuk",
+        "email": "kostyuk@gmail.com",
+        "dateOfBirth": "10-01-1987",
+        "source": "myself"
+      },
+      {
+        "fullName": "Ivan Kyrylenko",
+        "email": "ivan@gmail.com",
+        "dateOfBirth": "12-03-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Daria Bondarenko",
+        "email": "daria@gmail.com",
+        "dateOfBirth": "05-09-1995",
+        "source": "friends"
+      },
+      {
+        "fullName": "Kateryna Tkachenko",
+        "email": "tkachenko@gmail.com",
+        "dateOfBirth": "20-07-1992",
+        "source": "social"
+      },
+      {
+        "fullName": "Yurii Romanenko",
+        "email": "romanenko@gmail.com",
+        "dateOfBirth": "15-12-1988",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Fitness Bootcamp",
+    "description": "Intensive fitness training",
+    "eventDate": "2024-06-05T06:00:00Z",
+    "organizer": "Fitness Club 'Power'",
+    "registrations": [
+      {
+        "fullName": "Oleh Prokopenko",
+        "email": "prokopenko@gmail.com",
+        "dateOfBirth": "10-06-1987",
+        "source": "myself"
+      },
+      {
+        "fullName": "Oleksii Yaroshenko",
+        "email": "yaroshenko@gmail.com",
+        "dateOfBirth": "25-12-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Yana Tymoshenko",
+        "email": "yana@gmail.com",
+        "dateOfBirth": "20-05-1992",
+        "source": "friends"
+      },
+      {
+        "fullName": "Andriy Petrenko",
+        "email": "petrenko@gmail.com",
+        "dateOfBirth": "30-09-1988",
+        "source": "social"
+      },
+      {
+        "fullName": "Olga Melnyk",
+        "email": "melnyk@gmail.com",
+        "dateOfBirth": "15-02-1985",
+        "source": "myself"
+      }
+    ]
+  },
+  {
+    "title": "Meditation Workshop",
+    "description": "Introduction to meditation techniques",
+    "eventDate": "2024-06-06T09:00:00Z",
+    "organizer": "Meditation Center 'Zen'",
+    "registrations": [
+      {
+        "fullName": "Kateryna Kuznetsova",
+        "email": "kuznetsova@gmail.com",
+        "dateOfBirth": "10-07-1985",
+        "source": "myself"
+      },
+      {
+        "fullName": "Oleh Yakovenko",
+        "email": "yakovenko@gmail.com",
+        "dateOfBirth": "15-11-1990",
+        "source": "friends"
+      },
+      {
+        "fullName": "Oksana Melnychuk",
+        "email": "melnychuk@gmail.com",
+        "dateOfBirth": "20-05-1993",
+        "source": "friends"
+      },
+      {
+        "fullName": "Nina Shevchenko",
+        "email": "shevchenko@gmail.com",
+        "dateOfBirth": "30-08-1988",
+        "source": "social"
+      },
+      {
+        "fullName": "Oleksii Kostyuk",
+        "email": "kostyuk@gmail.com",
+        "dateOfBirth": "25-01-1995",
+        "source": "myself"
+      }
+    ]
+  }
+]
