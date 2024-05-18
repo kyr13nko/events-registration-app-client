@@ -15,7 +15,7 @@ export const filterSlice = createSlice({
     setEmailFilter: (state, { payload }) => {
       state.email = payload;
     },
-    clearFilters: (state, { payload }) => {
+    clearFilters: (state) => {
       state.email = "";
       state.fullName = "";
     },
