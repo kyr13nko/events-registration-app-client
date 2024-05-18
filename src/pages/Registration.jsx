@@ -6,6 +6,7 @@ import { getEventById } from "../store/events/eventsOperations";
 import { selectEventById, selectIsLoading } from "../store/events/eventsSelectors";
 
 import RegisterForm from "../components/RegisterForm/RegisterForm";
+import { Title } from "../styles/GlobalStyles";
 
 const Registration = () => {
   const { id } = useParams();
@@ -24,7 +25,7 @@ const Registration = () => {
       ) : (
         event.title && (
           <>
-            <h2>&quot;{event.title}&quot; event registration</h2>
+            <Title>&quot;{event.title}&quot; event registration</Title>
             <RegisterForm />
           </>
         )

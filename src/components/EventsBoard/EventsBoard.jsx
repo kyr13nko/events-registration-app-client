@@ -9,6 +9,9 @@ import {
   selectTotalPages,
 } from "../../store/events/eventsSelectors";
 
+import { LinkWrapper } from "./EventsBoard.styled";
+import { Item, List } from "../../styles/GlobalStyles";
+
 const EventsBoard = () => {
   const location = useLocation();
   const dispatch = useDispatch();
@@ -51,20 +54,22 @@ const EventsBoard = () => {
 
   return (
     <>
-      <ul>
+      <List>
         {events.map(({ _id, title, description }) => (
-          <li key={_id}>
+          <Item key={_id}>
             <h3>{title}</h3>
             <p>{description}</p>
-            <Link to={`/registration/${_id}`} state={{ from: location }}>
-              Register
-            </Link>
-            <Link to={`/participants/${_id}`} state={{ from: location }}>
-              View
-            </Link>
-          </li>
+            <LinkWrapper>
+              <Link to={`/registration/${_id}`} state={{ from: location }}>
+                Register
+              </Link>
+              <Link to={`/participants/${_id}`} state={{ from: location }}>
+                View
+              </Link>
+            </LinkWrapper>
+          </Item>
         ))}
-      </ul>
+      </List>
       {totalPages > currentPage && (
         <button type="button" onClick={handleLoadMoreBtnClick}>
           Load more

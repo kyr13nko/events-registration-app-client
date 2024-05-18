@@ -6,12 +6,17 @@ import { getEventById } from "../store/events/eventsOperations";
 import { selectEventById, selectIsLoading } from "../store/events/eventsSelectors";
 
 import View from "../components/View/View";
+import { Title } from "../styles/GlobalStyles";
+import Filter from "../components/Filter/Filter";
+import { getFilteredRegistrations } from "../store/filter/filterSelectors";
 
 const Participants = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const event = useSelector(selectEventById);
   const isLoading = useSelector(selectIsLoading);
+
+  const filteredRegistrations = useSelector(getFilteredRegistrations);
 
   useEffect(() => {
     dispatch(getEventById(id));
@@ -24,8 +29,14 @@ const Participants = () => {
       ) : (
         event.title && (
           <>
-            <h2>&quot;{event.title}&quot; event participants</h2>
-            <View event={event} />
+            <Title>&quot;{event.title}&quot; event participants</Title>
+            {event.registrations.length > 0 && (
+              <>
+                <Filter title="name" />
+                <Filter title="email" />
+              </>
+            )}
+            <View event={{ ...event, registrations: filteredRegistrations }} />
           </>
         )
       )}

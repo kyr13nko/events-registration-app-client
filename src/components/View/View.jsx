@@ -1,15 +1,17 @@
+import { Item, List } from "../../styles/GlobalStyles";
+
 const View = ({ event }) => {
-  return !event.registrations?.length > 0 ? (
-    <div>Nobody register</div>
-  ) : (
-    <ul>
-      {event.registrations?.map((member) => (
-        <li key={member._id}>
-          <h3>{member.fullName}</h3>
-          <p>{member.email}</p>
-        </li>
+  return event.registrations?.length > 0 ? (
+    <List>
+      {event.registrations?.map(({ _id, fullName, email }) => (
+        <Item key={_id}>
+          <h3>{fullName}</h3>
+          <p>{email}</p>
+        </Item>
       ))}
-    </ul>
+    </List>
+  ) : (
+    <div>Nobody register</div>
   );
 };
 

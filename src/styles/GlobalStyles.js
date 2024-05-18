@@ -71,3 +71,42 @@ export const Container = styled.div`
   padding: 0 1rem;
   margin: 0 auto;
 `;
+
+export const Section = styled.section`
+  height: 110vh;
+`;
+
+export const Title = styled.h1`
+  margin: 1rem 0 0.5rem;
+`;
+
+export const List = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  padding-bottom: 2rem;
+`;
+
+export const Item = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  width: 280px;
+
+  background-color: var(--color-white);
+
+  border: 1px solid var(--color-primary);
+  border-radius: 0.5rem;
+
+  padding: 0.75rem;
+
+  & p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--color-grey);
+  }
+`;

@@ -1,11 +1,12 @@
 import EventsBoard from "../components/EventsBoard/EventsBoard";
+import { Section, Title } from "../styles/GlobalStyles";
 
 const Events = () => {
   return (
-    <section>
-      <h2>Events</h2>
+    <Section>
+      <Title>Events</Title>
       <EventsBoard />
-    </section>
+    </Section>
   );
 };
 
