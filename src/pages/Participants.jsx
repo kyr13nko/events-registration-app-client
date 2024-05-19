@@ -5,10 +5,13 @@ import { useParams } from "react-router-dom";
 import { getEventById } from "../store/events/eventsOperations";
 import { selectEventById, selectIsLoading } from "../store/events/eventsSelectors";
 
-import View from "../components/View/View";
-import { FiltersBlock, Section, Title } from "../styles/GlobalStyles";
-import Filter from "../components/Filter/Filter";
 import { getFilteredRegistrations } from "../store/filter/filterSelectors";
+
+import View from "../components/View/View";
+import Filter from "../components/Filter/Filter";
+import Loader from "../components/Loader/Loader";
+
+import { FiltersBlock, Section, Title } from "../styles/GlobalStyles";
 
 const Participants = () => {
   const { id } = useParams();
@@ -25,7 +28,7 @@ const Participants = () => {
   return (
     <Section>
       {isLoading ? (
-        <div>Loading...</div>
+        <Loader />
       ) : (
         event.title && (
           <>

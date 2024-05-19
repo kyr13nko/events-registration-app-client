@@ -6,6 +6,8 @@ import { getEventById } from "../store/events/eventsOperations";
 import { selectEventById, selectIsLoading } from "../store/events/eventsSelectors";
 
 import RegisterForm from "../components/RegisterForm/RegisterForm";
+import Loader from "../components/Loader/Loader";
+
 import { RegistrationSection, Title } from "../styles/GlobalStyles";
 
 const Registration = () => {
@@ -21,7 +23,7 @@ const Registration = () => {
   return (
     <RegistrationSection>
       {isLoading ? (
-        <div>Loading...</div>
+        <Loader />
       ) : (
         event.title && (
           <>

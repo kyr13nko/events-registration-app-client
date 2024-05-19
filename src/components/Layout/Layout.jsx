@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 
 import Header from "../Header/Header";
+import Loader from "../Loader/Loader";
 
 import { Container } from "../../styles/GlobalStyles";
 
@@ -11,7 +12,7 @@ const Layout = () => {
       <Header />
       <main>
         <Container>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loader data="data" />}>
             <Outlet />
           </Suspense>
         </Container>
