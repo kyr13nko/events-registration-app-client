@@ -74,7 +74,6 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  height: 110vh;
   margin: 0 auto;
 `;
 
@@ -117,6 +116,11 @@ export const Item = styled.li`
     font-size: 0.75rem;
     font-weight: 400;
     color: var(--color-grey);
+
+    & span {
+      color: var(--color-text);
+      background-color: var(--color-secondary);
+    }
   }
 `;
 
@@ -147,6 +151,8 @@ export const Button = styled.button`
   font-weight: 500;
 
   background-color: var(--color-secondary);
+
+  border: 1px solid var(--color-primary);
   border-radius: 0.5rem;
 
   padding: 0.75rem 0.5rem;

@@ -1,42 +1,23 @@
 import styled from "styled-components";
 
-export const List = styled.ul`
+export const SortButtonsBLock = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 
-  padding-bottom: 2rem;
-`;
-
-export const Item = styled.li`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 0.5rem;
-
-  width: 280px;
-
-  background-color: var(--color-white);
-
-  border: 1px solid var(--color-primary);
-  border-radius: 0.5rem;
-
-  padding: 0.75rem;
-
-  & p {
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: var(--color-grey);
-  }
+  margin: 3rem 0;
 `;
 
 export const LinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
+  margin-top: 0.5rem;
+
   & a {
     background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
     border-radius: 0.5rem;
 
     padding: 0.25rem 0.5rem;
