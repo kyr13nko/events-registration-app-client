@@ -43,6 +43,7 @@ export const getAddMember = createAsyncThunk(
     console.log("values", values);
     try {
       const { data } = await fetchAddMember(id, values);
+      toast.success(`${values.fullName} you register successfully!`);
       return data;
     } catch (error) {
       if (error) {

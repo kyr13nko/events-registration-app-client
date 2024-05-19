@@ -6,7 +6,7 @@ import { getEventById } from "../store/events/eventsOperations";
 import { selectEventById, selectIsLoading } from "../store/events/eventsSelectors";
 
 import RegisterForm from "../components/RegisterForm/RegisterForm";
-import { Title } from "../styles/GlobalStyles";
+import { RegistrationSection, Title } from "../styles/GlobalStyles";
 
 const Registration = () => {
   const { id } = useParams();
@@ -19,7 +19,7 @@ const Registration = () => {
   }, [dispatch, id]);
 
   return (
-    <section>
+    <RegistrationSection>
       {isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -30,7 +30,7 @@ const Registration = () => {
           </>
         )
       )}
-    </section>
+    </RegistrationSection>
   );
 };
 

@@ -6,7 +6,7 @@ import { getEventById } from "../store/events/eventsOperations";
 import { selectEventById, selectIsLoading } from "../store/events/eventsSelectors";
 
 import View from "../components/View/View";
-import { Title } from "../styles/GlobalStyles";
+import { FiltersBlock, Section, Title } from "../styles/GlobalStyles";
 import Filter from "../components/Filter/Filter";
 import { getFilteredRegistrations } from "../store/filter/filterSelectors";
 
@@ -23,7 +23,7 @@ const Participants = () => {
   }, [dispatch, id]);
 
   return (
-    <section>
+    <Section>
       {isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -31,16 +31,16 @@ const Participants = () => {
           <>
             <Title>&quot;{event.title}&quot; event participants</Title>
             {event.registrations.length > 0 && (
-              <>
+              <FiltersBlock>
                 <Filter title="name" />
                 <Filter title="email" />
-              </>
+              </FiltersBlock>
             )}
             <View event={{ ...event, registrations: filteredRegistrations }} />
           </>
         )
       )}
-    </section>
+    </Section>
   );
 };
 

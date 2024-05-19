@@ -63,6 +63,7 @@ export const GlobalStyles = createGlobalStyle`
   button {
     background-color: transparent;
     cursor: pointer;
+    border: none;
   }
 `;
 
@@ -74,9 +75,17 @@ export const Container = styled.div`
 
 export const Section = styled.section`
   height: 110vh;
+  margin: 0 auto;
+`;
+
+export const RegistrationSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
+  text-align: center;
   margin: 1rem 0 0.5rem;
 `;
 
@@ -108,5 +117,56 @@ export const Item = styled.li`
     font-size: 0.75rem;
     font-weight: 400;
     color: var(--color-grey);
+  }
+`;
+
+export const Input = styled.input`
+  width: 100%;
+
+  outline: none;
+
+  border: 1px solid var(--color-secondary);
+  border-radius: 0.5rem;
+
+  padding: 0.25rem 0.75rem;
+  margin-top: 0.25rem;
+
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-primary);
+  }
+
+  &::placeholder {
+    color: var(--color-grey);
+  }
+`;
+
+export const Button = styled.button`
+  font-weight: 500;
+
+  background-color: var(--color-secondary);
+  border-radius: 0.5rem;
+
+  padding: 0.75rem 0.5rem;
+
+  transition: var(--transition);
+
+  &:hover {
+    background-color: var(--color-primary);
+  }
+`;
+
+export const FiltersBlock = styled.div`
+  display: flex;
+
+  flex-direction: column;
+  gap: 1rem;
+
+  margin: 3rem 0;
+
+  @media screen and (min-width: 420px) {
+    flex-direction: row;
   }
 `;

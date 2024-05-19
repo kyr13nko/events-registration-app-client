@@ -1,14 +1,25 @@
 import { useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { getAddMember } from "../../store/events/eventsOperations";
 
 import { useFormik } from "formik";
 import { registerSchema } from "../../helpers/registerSchema";
 
+import {
+  ErrorMessage,
+  Form,
+  RadioWrapper,
+  StyledRadioButton,
+  SuccessMessage,
+} from "./RegisterForm.styled";
+import { Button, Input } from "../../styles/GlobalStyles";
+
 const RegisterForm = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
+
+  const navigate = useNavigate();
 
   const formik = useFormik({
     initialValues: {
@@ -22,6 +33,7 @@ const RegisterForm = () => {
       try {
         dispatch(getAddMember({ id, values }));
         resetForm();
+        navigate(`/participants/${id}`);
       } catch (error) {
         console.warn(error);
       }
@@ -31,83 +43,90 @@ const RegisterForm = () => {
   const { handleSubmit, handleChange, handleBlur, values, touched, errors } = formik;
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Full name:</label>
-      <input
-        id="fullName"
-        type="text"
-        name="fullName"
-        placeholder="Name Surname"
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.fullName}
-        style={{
-          borderColor:
-            touched.fullName && errors.fullName
-              ? "var(--color-red)"
-              : touched.fullName && !errors.fullName
-              ? "var(--color-green)"
-              : "transparent",
-        }}
-      />
-      {touched.fullName && errors.fullName ? (
-        <div>{errors.fullName}</div>
-      ) : (
-        touched.fullName && <div>Name is correct!</div>
-      )}
-
-      <label>Email:</label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        placeholder="example@mail.com"
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.email}
-        style={{
-          borderColor:
-            touched.email && errors.email
-              ? "var(--color-red)"
-              : touched.email && !errors.email
-              ? "var(--color-green)"
-              : "transparent",
-        }}
-      />
-      {touched.email && errors.email ? (
-        <div>{errors.email}</div>
-      ) : (
-        touched.email && <div>Email is correct!</div>
-      )}
-
-      <label>Date of birth:</label>
-      <input
-        id="dateOfBirth"
-        type="text"
-        name="dateOfBirth"
-        placeholder="dd-MM-yyyy"
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.dateOfBirth}
-        style={{
-          borderColor:
-            touched.dateOfBirth && errors.dateOfBirth
-              ? "var(--color-red)"
-              : touched.dateOfBirth && !errors.dateOfBirth
-              ? "var(--color-green)"
-              : "transparent",
-        }}
-      />
-      {touched.dateOfBirth && errors.dateOfBirth ? (
-        <div>{errors.dateOfBirth}</div>
-      ) : (
-        touched.dateOfBirth && <div>Date of birth is correct!</div>
-      )}
-
-      <label>Where did you hear about this event?</label>
+    <Form onSubmit={handleSubmit}>
       <div>
-        <label>
-          <input
+        <label htmlFor="fullName">Full name:</label>
+        <Input
+          id="fullName"
+          type="text"
+          name="fullName"
+          placeholder="Name Surname"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.fullName}
+          style={{
+            borderColor:
+              touched.fullName && errors.fullName
+                ? "var(--color-red)"
+                : touched.fullName && !errors.fullName
+                ? "var(--color-green)"
+                : "var(--color-secondary)",
+          }}
+        />
+        {touched.fullName && errors.fullName ? (
+          <ErrorMessage>{errors.fullName}</ErrorMessage>
+        ) : (
+          touched.fullName && <SuccessMessage>Name is correct!</SuccessMessage>
+        )}
+      </div>
+
+      <div>
+        <label htmlFor="email">Email:</label>
+        <Input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="example@mail.com"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.email}
+          style={{
+            borderColor:
+              touched.email && errors.email
+                ? "var(--color-red)"
+                : touched.email && !errors.email
+                ? "var(--color-green)"
+                : "var(--color-secondary)",
+          }}
+        />
+        {touched.email && errors.email ? (
+          <ErrorMessage>{errors.email}</ErrorMessage>
+        ) : (
+          touched.email && <SuccessMessage>Email is correct!</SuccessMessage>
+        )}
+      </div>
+
+      <div>
+        <label htmlFor="dateOfBirth">Date of birth:</label>
+        <Input
+          id="dateOfBirth"
+          type="text"
+          name="dateOfBirth"
+          placeholder="dd-MM-yyyy"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.dateOfBirth}
+          style={{
+            borderColor:
+              touched.dateOfBirth && errors.dateOfBirth
+                ? "var(--color-red)"
+                : touched.dateOfBirth && !errors.dateOfBirth
+                ? "var(--color-green)"
+                : "var(--color-secondary)",
+          }}
+        />
+        {touched.dateOfBirth && errors.dateOfBirth ? (
+          <ErrorMessage>{errors.dateOfBirth}</ErrorMessage>
+        ) : (
+          touched.dateOfBirth && <SuccessMessage>Date of birth is correct!</SuccessMessage>
+        )}
+      </div>
+
+      <div>
+        <p>Where did you hear about this event?</p>
+        <RadioWrapper>
+          <StyledRadioButton
+            id="social"
             type="radio"
             name="source"
             value="social"
@@ -115,10 +134,10 @@ const RegisterForm = () => {
             onBlur={handleBlur}
             checked={values.source === "social"}
           />
-          Social media
-        </label>
-        <label>
-          <input
+          <label htmlFor="social">Social media</label>
+
+          <StyledRadioButton
+            id="friends"
             type="radio"
             name="source"
             value="friends"
@@ -126,10 +145,10 @@ const RegisterForm = () => {
             onBlur={handleBlur}
             checked={values.source === "friends"}
           />
-          Friends
-        </label>
-        <label>
-          <input
+          <label htmlFor="friends">Friends</label>
+
+          <StyledRadioButton
+            id="myself"
             type="radio"
             name="source"
             value="myself"
@@ -137,17 +156,12 @@ const RegisterForm = () => {
             onBlur={handleBlur}
             checked={values.source === "myself"}
           />
-          Found myself
-        </label>
+          <label htmlFor="myself">Found myself</label>
+        </RadioWrapper>
       </div>
-      {touched.source && errors.source ? (
-        <div>{errors.source}</div>
-      ) : (
-        touched.source && <div>Source is correct!</div>
-      )}
 
-      <button type="submit">Send</button>
-    </form>
+      <Button type="submit">Send</Button>
+    </Form>
   );
 };
 

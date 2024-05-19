@@ -1,15 +1,15 @@
-import { NavLink } from "react-router-dom";
 import { Container } from "../../styles/GlobalStyles";
+import { HeaderBlock, StyledLink } from "./Header.styled";
 
 const Header = () => {
   return (
-    <header>
+    <HeaderBlock>
       <Container>
         <nav>
-          <NavLink to="/events">Events</NavLink>
+          <StyledLink to="/events">Events</StyledLink>
         </nav>
       </Container>
-    </header>
+    </HeaderBlock>
   );
 };
 
